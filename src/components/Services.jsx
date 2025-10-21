@@ -6,7 +6,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="position-relative">
+      <div  className="position-relative">
         <div className="row gx-md-5 gy-5 text-center justify-content-center">
           {surgeryList.map((item) => (
             <ServiceCard key={item.id} {...item} />

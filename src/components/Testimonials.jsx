@@ -17,7 +17,7 @@ const Testimonials = () => {
   const nextSlide = () => setCurrent(current === testimonials.length - 1 ? 0 : current + 1);
 
   return (
-    <section className="testimonials py-10 bg-light">
+    <section  className="testimonials py-10 bg-light">
       <div className="container text-center">
         <h2 className="fs-40 fw-bold mb-6 text-primary">What Our Patients Say</h2>
 

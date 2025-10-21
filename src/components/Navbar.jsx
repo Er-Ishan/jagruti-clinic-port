@@ -37,7 +37,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
       <div className="navbar-brand w-100">
         <NextLink
           href="/"
-          title={<Image alt="Logo | ENTrova" className="py-2" src="/img/logo.png" width={150} height={120} />}
+          title={<Image alt="Logo | Jagruti" className="py-2" src="/img/logo.png" width={150} height={120} />}
         />
       </div>
 
@@ -52,7 +52,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
             title={
               <Image
                 id="nav-logo"
-                alt="Logo | ENTrova"
+                alt="Logo | Jagruti"
                 className="p-2 position-static bg-white rounded"
                 src="/img/logo.png"
                 style={{ maxWidth: '200px' }}
@@ -74,7 +74,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
               <NextLink href="/" title="Home" className="nav-link" />
             </li>
 
-            <li className="nav-item dropdown d-none d-lg-block">
+            {/* <li className="nav-item dropdown d-none d-lg-block">
               <DropdownToggleLink title="About Us" className="nav-link dropdown-toggle" />
               <ul className="dropdown-menu" data-bs-dismiss="offcanvas">
                 {aboutUs.map(({ id, url, title, children }) => (
@@ -88,17 +88,15 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
                   )
                 ))}
               </ul>
-            </li>
+            </li> */}
 
             <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="About Us" className="nav-link" />
+              <NextLink href="#intro" title="About Us" className="nav-link" />
             </li>
             <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Dr. Jagruti Patil" className="nav-link" />
+              <NextLink href="#intro" title="Dr. Jagruti Patil" className="nav-link" />
             </li>
-            <li className="nav-item d-lg-none" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Gallery" className="nav-link" />
-            </li>
+            
 
             {/* <li className="nav-item dropdown d-none d-lg-block">
               <DropdownToggleLink title="Surgeries" className="nav-link dropdown-toggle" href="#" />
@@ -220,9 +218,21 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
                 </ul>
               </li>
             ))} */}
-
+            
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Contact Us" className="nav-link" />
+              <NextLink href="#intro" title="About Us" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#contact" title="Contact Us" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#service" title="Services" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="Gallery" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#test" title="Testinomials" className="nav-link" />
             </li>
             <li
               className="nav-item align-items-center d-flex mt-3 mt-lg-0 ms-lg-3"
@@ -230,7 +240,7 @@ const Navbar = ({ navClassName, navOtherClass, fancy, stickyBox }) => {
             >
               <NextLink
                 title="Book Appointment"
-                href="#"
+                href="#appointment"
                 className="btn btn-sm secondary-bg text-white mb-lg-1 rounded border border-md-none"
               />
             </li>

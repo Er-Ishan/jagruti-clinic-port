@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="d-flex w-100">
                 <Image
                   src="/img/logo.png"
-                  alt="Logo | ENTrova"
+                  alt="Logo | Jagruti"
                   width={150}
                   height={100}
                   className="text-center"

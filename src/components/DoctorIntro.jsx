@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const DoctorIntro = () => {
   return (
-    <section
+    <section 
       className="doctor-intro d-flex align-items-center py-5 w-100"
       style={{
         minHeight: '100vh',
