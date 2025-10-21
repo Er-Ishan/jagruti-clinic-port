@@ -7,6 +7,10 @@ import Services from 'components/Services';
 import Intro from 'components/DoctorIntro';
 import Test from 'components/Testimonials';
 import Free from 'components/FreeGuide';
+import Tip from 'components/HealthTip';
+import Contact from 'components/ContactForm';
+import Book from 'components/BookConsultation';
+import Service from 'components/ServicesSection';
 
 const Home = () => {
   return (
@@ -42,7 +46,7 @@ const Home = () => {
           </div>
         </section> */}
 
-        <section className="wrapper bg-light py-10 py-md-14">
+        <section id="intro" className="wrapper bg-light py-10 py-md-14">
           <div className="container">
             <div className="col-md-10 col-lg-8">
               <p className="fs-80 fw-bolder sub-h2 position-relative">About Us</p>
@@ -64,8 +68,8 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Surgeries Section */}
-        <section className="wrapper bg-light py-10 py-md-14">
+        {/* service Section */}
+        <section id='service' className="wrapper bg-light py-10 py-md-14">
           <div className="container">
             <div className="col-md-10 col-lg-8">
               <p className="fs-80 fw-bolder sub-h2 position-relative">Services</p>
@@ -84,6 +88,52 @@ const Home = () => {
 
             {/* Services Grid */}
             <Services />
+          </div>
+        </section>
+
+        {/* appointment Section */}
+        <section id="appointment" className="wrapper bg-light py-10 py-md-14">
+          <div className="container">
+            <div className="col-md-10 col-lg-8">
+              <p className="fs-80 fw-bolder sub-h2 position-relative">Appointment</p>
+              <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head">
+                Consult
+                <span
+                  className="ms-2 d-inline-block"
+                  style={{
+                    borderBottom: '3px solid #D8D8D8',
+                    width: '30px',
+                    height: 0,
+                  }}
+                />
+              </h2>
+            </div>
+
+            {/* book Grid */}
+            <Book />
+          </div>
+        </section>
+
+        {/* tips Section */}
+        <section className="wrapper bg-light py-10 py-md-14">
+          <div className="container">
+            <div className="col-md-10 col-lg-8">
+              <p className="fs-80 fw-bolder sub-h2 position-relative">Tips</p>
+              <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head">
+                Health Tip of the Week
+                <span
+                  className="ms-2 d-inline-block"
+                  style={{
+                    borderBottom: '3px solid #D8D8D8',
+                    width: '30px',
+                    height: 0,
+                  }}
+                />
+              </h2>
+            </div>
+
+            {/* testinomials Grid */}
+            <Tip></Tip>
           </div>
         </section>
 
@@ -111,7 +161,7 @@ const Home = () => {
         </section>
 
         {/* stories Section */}
-        <section className="wrapper bg-light py-10 py-md-14">
+        <section id='test' className="wrapper bg-light py-10 py-md-14">
           <div className="container">
             <div className="col-md-10 col-lg-8">
               <p className="fs-80 fw-bolder sub-h2 position-relative">Testinomials</p>
@@ -130,6 +180,30 @@ const Home = () => {
 
             {/* testinomials Grid */}
             <Test></Test>
+          </div>
+        </section>
+
+
+        {/* contact Section */}
+        <section id="contact" className="wrapper bg-light py-10 py-md-14">
+          <div className="container">
+            <div className="col-md-10 col-lg-8">
+              <p className="fs-80 fw-bolder sub-h2 position-relative">Contact Us</p>
+              <h2 className="display-5 mb-16 fw-bold z-1 mt-n15 mt-md-n16 mt-lg-n17 sub-head">
+                Get In Touch
+                <span
+                  className="ms-2 d-inline-block"
+                  style={{
+                    borderBottom: '3px solid #D8D8D8',
+                    width: '30px',
+                    height: 0,
+                  }}
+                />
+              </h2>
+            </div>
+
+            {/* Contact Grid */}
+            <Contact></Contact>
           </div>
         </section>
       </main>

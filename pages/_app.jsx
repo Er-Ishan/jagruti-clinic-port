@@ -42,21 +42,21 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ENTrova - ENT Hospital Website Template</title>
-        <meta name="description" content="ENTrova is a modern ENT hospital website template tailored for clinics, hospitals, and healthcare professionals." />
+        <title>Dr. Jagruti Homeopathy Clinic</title>
+        <meta name="description" content="Dr. Jagruti Homeopathy Clinic" />
 
         {/* Open Graph Meta */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ENTrova - ENT Hospital Website Template" />
-        <meta property="og:description" content="Modern and responsive template for ENT clinics and healthcare services." />
+        <meta property="og:title" content="Dr. Jagruti Homeopathy Clinic" />
+        <meta property="og:description" content="Dr. Jagruti Homeopathy Clinic" />
         <meta property="og:url" content="https://entrova.com/" />
         <meta property="og:image" content="https://entrova.com/img/logo.webp" />
         <meta property="og:image:secure_url" content="https://entrova.com/img/logo.webp" />
 
         {/* Twitter Meta */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="ENTrova - ENT Hospital Website Template" />
-        <meta name="twitter:description" content="Modern and responsive template for ENT clinics and healthcare services." />
+        <meta name="twitter:title" content="Dr. Jagruti Homeopathy Clinic" />
+        <meta name="twitter:description" content="Dr. Jagruti Homeopathy Clinic" />
         <meta name="twitter:image" content="https://entrova.com/img/logo.webp" />
       </Head>
 
